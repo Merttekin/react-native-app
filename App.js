@@ -9,6 +9,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import Header from './src/components/Header';
+import Liste from './src/components/Liste';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -21,7 +22,10 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <Header headerText={'Proje'} />
+      <View>
+        <Header headerText={'Proje'} />
+        <Liste />
+      </View>
     );
   }
 }
