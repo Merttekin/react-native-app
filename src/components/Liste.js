@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
+import Detay from './Detay';
 
 class Liste extends Component{
     state = {
@@ -16,17 +17,17 @@ class Liste extends Component{
     }
 
     renderData(){
-        return this.state.data.map(responseData => 
-            <Text>{ responseData.title }</Text>
+        return this.state.data.map((responseData, id) => 
+            <Detay key={id} data={ responseData } />
         );
     }
 
     render(){
         console.log('gelen data : ' + this.state);
         return(
-            <View style={{ marginTop: 5}}>
+            <ScrollView style={{ marginTop: 5}}>
                 { this.renderData() }
-            </View>
+            </ScrollView>
         )
     }
 }

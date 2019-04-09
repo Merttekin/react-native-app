@@ -22,7 +22,7 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View>
+      <View style={{ flex: 1 }}>
         <Header headerText={'Proje'} />
         <Liste />
       </View>
