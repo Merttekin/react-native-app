@@ -12,7 +12,7 @@ class Liste extends Component{
     }
 
     componentDidMount(){
-        console.log('cdms');
+        
     }
 
     renderData(){
