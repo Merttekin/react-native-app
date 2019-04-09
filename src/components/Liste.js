@@ -12,7 +12,7 @@ class Liste extends Component{
     }
 
     componentDidMount(){
-        //github deneme
+        //github deneme asdasddas
     }
 
     renderData(){
